@@ -13,6 +13,7 @@ describe('<Login /> shallow rendering tests', () => {
   let wrapper;
 
   beforeEach(() => {
+    jest.setTimeout(10000);
     wrapper = mount(
       <MemoryRouter>
         <Login {...props} store={store}/>
