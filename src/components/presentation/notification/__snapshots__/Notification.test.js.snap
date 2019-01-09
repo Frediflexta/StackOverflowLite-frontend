@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Notification /> shallow rendering tests matches the snapshot 1`] = `
+<div
+  className="notification is-info"
+  style={
+    Object {
+      "display": "none",
+    }
+  }
+/>
+`;

@@ -25,5 +25,5 @@ function configureStore() {
 const store = configureStore();
 window.store = store;
 
-store.subscribe(() => localStorage.setItem('login', JSON.stringify(store.getState().login)));
+store.subscribe(() => localStorage.setItem('store', JSON.stringify(store.getState())));
 export default store;
