@@ -1,0 +1,32 @@
+{
+  "name": "noldor-ah-frontend",
+  "description": "",
+  "scripts": {
+  },
+  "env": {
+    "NPM_CONFIG_PRODUCTION": {
+      "required": true
+    },
+    "App_Callback": {
+      "required": true
+    },
+    "Client_Callback": {
+      "required": true
+    }
+  },
+  "formation": {
+  },
+  "addons": [
+    {
+      "plan": "heroku-postgresql",
+      "options": {
+        "version": "9.5"
+      }
+    }
+  ],
+  "buildpacks": [
+    {
+      "url": "heroku/nodejs"
+    }
+  ]
+}
