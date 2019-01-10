@@ -1,7 +1,8 @@
 const ROUTE_PATH = {
   login: '/login',
   register: '/register',
-  questions: '/questions'
+  questions: '/questions',
+  homepage: '/'
 };
 
 export default ROUTE_PATH;

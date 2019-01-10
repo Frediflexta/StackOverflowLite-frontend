@@ -3,6 +3,7 @@ import { connect } from 'react-redux';
 import propTypes from 'prop-types';
 import Questions from '../../presentation/questions/Questions';
 import Button from '../../presentation/button/Button';
+import Loading from '../../presentation/loader/Loader';
 import { sendGetAllQuestions } from '../../../redux/actions/getallQuestions/getallQuestionsAction';
 
 class QuestionContainer extends Component {
@@ -26,6 +27,29 @@ class QuestionContainer extends Component {
   }
 
   render() {
+    const { loading } = this.props;
+    if (loading === true) {
+      return (
+        <main>
+          <section>
+            <div className="h-content">
+              <div id="content-header">
+                <h1 className="title is-4">Recent Questions</h1>
+              </div>
+              <div id="ask">
+                <Button
+                  className="button is-info is-large is-small"
+                  type="submit"
+                  text="Ask Question"
+                />
+              </div>
+            </div>
+            {<Loading />}
+          </section>
+        </main>
+      );
+    }
+
     const {
       questions
     } = this.state;
@@ -57,11 +81,13 @@ const mapDispatchToProps = dispatch => ({
 });
 
 const mapStateToProps = state => ({
+  loading: state.getAllAvailableQuestions.loading,
   questions: state.getAllAvailableQuestions.questions,
 });
 
 QuestionContainer.propTypes = {
   getQuestions: propTypes.func,
+  loading: propTypes.bool,
   questions: propTypes.array
 };
 

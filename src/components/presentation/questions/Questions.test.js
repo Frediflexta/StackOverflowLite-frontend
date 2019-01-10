@@ -1,6 +1,6 @@
 import React from 'react';
 // import { MemoryRouter } from 'react-router-dom';
-import { mount, shallow } from 'enzyme';
+import { shallow } from 'enzyme';
 import Questions from './Questions';
 
 describe('<Questions /> shallow rendering tests', () => {

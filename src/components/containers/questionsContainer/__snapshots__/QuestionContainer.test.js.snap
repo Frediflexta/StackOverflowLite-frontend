@@ -3,6 +3,7 @@
 exports[`<QuestionContainer /> rendering tests matches the snapshot 1`] = `
 <QuestionContainer
   getQuestions={[Function]}
+  loading={true}
   questions={Array []}
   store={
     Object {
