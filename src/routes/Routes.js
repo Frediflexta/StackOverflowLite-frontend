@@ -9,6 +9,7 @@ import NavBar from '../components/presentation/header/header';
 import Footer from '../components/presentation/footer/Footer';
 import Login from '../components/containers/login/Login';
 import Register from '../components/containers/signup/Register';
+import QuestionContainer from '../components/containers/questionsContainer/QuestionContainer';
 
 const history = createHistory();
 
@@ -21,6 +22,7 @@ const Routes = () => {
           {/* <Route path={ROUTE_PATH.homepage} component={Homepage} exact /> */}
           <Route path={ROUTE_PATH.login} component={Login} />
           <Route path={ROUTE_PATH.register} component={Register} />
+          <Route path={ROUTE_PATH.questions} component={QuestionContainer} />
           <Route component={NotFound} />
         </Switch>
         <Footer />

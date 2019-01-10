@@ -7,12 +7,22 @@ import {
 let initialState;
 
 try {
-  initialState = JSON.parse(localStorage.getItem('store')).login;
+  const persistedLogin = JSON.parse(localStorage.getItem('login'));
+  if (persistedLogin) {
+    initialState = persistedLogin;
+  } else {
+    initialState = {
+      loading: false,
+      success: false,
+      error: null,
+      user: {}
+    };
+  }
 } catch (error) {
   initialState = {
     loading: false,
     success: false,
-    error: null,
+    error: true,
     user: {}
   };
 }

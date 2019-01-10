@@ -58,6 +58,5 @@ describe('<Login /> shallow rendering tests', () => {
     };
 
     await instance.handleSubmit(event);
-    // expect(instance.state.email).toEqual('test');
   });
 });
