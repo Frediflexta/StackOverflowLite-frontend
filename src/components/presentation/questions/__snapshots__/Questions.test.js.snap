@@ -1,0 +1,42 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Questions /> shallow rendering tests matches the snapshot 1`] = `
+<div
+  className="content-container"
+>
+  <div
+    className="votes"
+  />
+  <div
+    className="answers"
+  >
+    <div
+      className="ans-counts"
+    >
+      <span>
+        1
+      </span>
+    </div>
+    <div
+      className="quote"
+    >
+      answers
+    </div>
+  </div>
+  <div
+    className="ques-details"
+  >
+    <h3>
+      <Link
+        replace={false}
+        to="/questions/2"
+      >
+        something
+      </Link>
+    </h3>
+    <p>
+      something here too
+    </p>
+  </div>
+</div>
+`;

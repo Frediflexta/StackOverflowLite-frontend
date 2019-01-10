@@ -15,13 +15,6 @@ describe('<Input /> shallow rendering tests', () => {
     />
   );
 
-  // it('should render Input with props successfully', () => {
-  //   console.log(wrapper.debug());
-  //   expect(wrapper.find('input').hasClass('test')).toBe(true);
-  //   expect(wrapper.find('Mia').exists()).to.equal(true);
-  //   expect(wrapper.find('input[type="text"]').exists()).toBe(true);
-  // });
-
   it('should pass in the onChange prop successfully', () => {
     wrapper.find('input').simulate(
       'change',
