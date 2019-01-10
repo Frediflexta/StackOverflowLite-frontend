@@ -47,6 +47,7 @@ export const sendLoginRequest = (user) => {
 
       dispatch(loginBegins());
       const loginUser = await axios.post(url, user);
+      localStorage.setItem('x-access', loginUser.data.token);
       dispatch(loginSuccess(loginUser.data));
       dispatch(notificationSuccess(loginUser.data.message));
     } catch (error) {
