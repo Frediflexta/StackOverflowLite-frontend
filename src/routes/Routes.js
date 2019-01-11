@@ -11,6 +11,7 @@ import Footer from '../components/presentation/footer/Footer';
 import Login from '../components/containers/login/Login';
 import Register from '../components/containers/signup/Register';
 import QuestionContainer from '../components/containers/questionsContainer/QuestionContainer';
+import PostQuestion from '../components/containers/post-questions/PostQuestion';
 
 const history = createHistory();
 
@@ -24,6 +25,7 @@ const Routes = () => {
           <Route path={ROUTE_PATH.login} component={Login} />
           <Route path={ROUTE_PATH.register} component={Register} />
           <Route path={ROUTE_PATH.questions} component={QuestionContainer} />
+          <Route path={ROUTE_PATH.postQuestion} component={PostQuestion} />
           <Route component={NotFound} />
         </Switch>
         <Footer />
