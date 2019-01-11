@@ -32,7 +32,6 @@ export const getQuestionsFailure = error => ({
 });
 
 /**
- * @param {object} user user information is sent to the backend
  * @returns {object} a promise that resolves to an object
  */
 export const sendGetAllQuestions = () => {

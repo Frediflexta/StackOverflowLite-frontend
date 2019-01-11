@@ -13,14 +13,10 @@ const Homepage = () => {
             {/* <h2 className="subtitle">
                         $this is the best software platform for running an internet business. We handle billions of dollars every year for forward-thinking businesses around the world.
             </h2> */}
-            <div className="box">
-              <div className="field is-grouped">
-                <p className="control">
-                  <Link className="button is-info" to="/questions">
+            <div className="field is-grouped is-centered">
+              <Link className="button is-info" to="/questions">
                     View Recent Questions
-                  </Link>
-                </p>
-              </div>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<PostQuestion /> rendering tests matches the snapshot 1`] = `
+<PostQuestion
+  handleQuestionSubmit={[MockFunction]}
+  notification={
+    Object {
+      "message": null,
+      "type": null,
+    }
+  }
+  postQues={[Function]}
+  questionBody={
+    Object {
+      "data": Object {},
+      "error": false,
+      "loading": false,
+      "success": false,
+    }
+  }
+  questions={
+    Array [
+      Object {
+        "title": "test question",
+      },
+      Object {
+        "body": "test body",
+      },
+    ]
+  }
+  store={
+    Object {
+      "dispatch": [Function],
+      "getState": [Function],
+      "replaceReducer": [Function],
+      "subscribe": [Function],
+      Symbol(observable): [Function],
+    }
+  }
+  storeSubscription={
+    Subscription {
+      "listeners": Object {
+        "clear": [Function],
+        "get": [Function],
+        "notify": [Function],
+        "subscribe": [Function],
+      },
+      "onStateChange": [Function],
+      "parentSub": undefined,
+      "store": Object {
+        "dispatch": [Function],
+        "getState": [Function],
+        "replaceReducer": [Function],
+        "subscribe": [Function],
+        Symbol(observable): [Function],
+      },
+      "unsubscribe": [Function],
+    }
+  }
+/>
+`;

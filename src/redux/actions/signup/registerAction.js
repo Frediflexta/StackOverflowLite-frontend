@@ -46,7 +46,9 @@ export const sendRegisterRequest = (user) => {
     try {
       const url = 'https://freddie-stackoverflowlite.herokuapp.com/api/v1/auth/signup';
       dispatch(registerBegins());
+
       const registerUser = await axios.post(url, user);
+      localStorage.setItem('x-access', registerUser.data.token);
       dispatch(registerSuccess(registerUser.data));
       dispatch(notificationSuccess(registerUser.data.message));
     } catch (error) {
